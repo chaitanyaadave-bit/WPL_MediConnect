@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — Mediconnect</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar figma-header">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-heart-pulse-fill text-teal me-1"></i>Mediconnect</a>
+    <div class="d-flex align-items-center" id="navAuthSlot"></div>
+  </div>
+</nav>
+
+<div class="container d-flex align-items-center justify-content-center py-5" style="min-height:calc(100vh - 140px);">
+
+  <div class="card shadow-sm" id="registerCard" style="max-width:560px; width:100%;">
+    <div class="card-body p-4">
+      <div class="text-center mb-4">
+        <span class="pill-teal mb-2">Join Mediconnect</span>
+        <h1 class="h3 fw-bold">Create your account</h1>
+        <p class="small mb-0">Already registered? <a href="login.html" id="loginLink">Log in</a></p>
+      </div>
+
+      <div id="registerAlert" class="alert alert-danger d-none py-2 small" role="alert"></div>
+
+      <form id="registerForm">
+        <div class="mb-3">
+          <label for="fullName" class="form-label fw-semibold">Full name</label>
+          <input type="text" class="form-control" id="fullName" required>
+        </div>
+        <div class="row g-3">
+          <div class="col-sm-6 mb-3">
+            <label for="phone" class="form-label fw-semibold">Phone number</label>
+            <input type="tel" class="form-control" id="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <label for="email" class="form-label fw-semibold">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label fw-semibold">Address</label>
+          <textarea class="form-control" id="address" rows="2" required></textarea>
+        </div>
+        <div class="row g-3">
+          <div class="col-sm-6 mb-3">
+            <label for="newPassword" class="form-label fw-semibold">Create password</label>
+            <input type="password" class="form-control" id="newPassword" minlength="8" required>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <label for="confirmPassword" class="form-label fw-semibold">Confirm password</label>
+            <input type="password" class="form-control" id="confirmPassword" minlength="8" required>
+          </div>
+        </div>
+        <div class="form-text mb-3">Password must be at least 8 characters.</div>
+        <button type="submit" class="btn btn-teal w-100">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="card shadow-sm d-none text-center" id="successCard" style="max-width:560px; width:100%;">
+    <div class="card-body p-4">
+      <i class="bi bi-check-circle-fill text-success" style="font-size:2.5rem;"></i>
+      <h1 class="h3 fw-bold mt-3">You're registered</h1>
+      <p>Welcome to Mediconnect. Your Member ID is:</p>
+      <p class="h3 text-teal fw-bold" id="assignedMemberId"></p>
+      <p class="small text-muted">Keep this ID handy — you'll use it to log in, look up reports and check bills.</p>
+      <a href="doctors.html" class="btn btn-teal" id="continueBtn">Book your first appointment</a>
+    </div>
+  </div>
+
+</div>
+
+<footer class="figma-footer py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <i class="bi bi-heart-pulse-fill text-teal fs-4" aria-hidden="true"></i>
+          <span class="fw-bold text-navy fs-5">Mediconnect</span>
+        </div>
+        <p class="small mb-3" style="color:var(--text);">Diagnostic-grade clinical portal offering patient triage, specialist appointments, and secure health records.</p>
+        <div class="mb-1"><span class="label-caps">Phone</span><br><span class="small" style="color:var(--navy-text);">+91 20 4567 8899</span></div>
+        <div><span class="label-caps">Email</span><br><span class="small" style="color:var(--navy-text);">care@mediconnect.example</span></div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4>Quick navigation</h4>
+        <ul class="list-unstyled small d-flex flex-column gap-2 mt-3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="patient-care.html">Patient care</a></li>
+          <li><a href="specialties.html">Specialties</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 col-6">
+        <h4>Clinic hours</h4>
+        <div class="mt-3">
+          <div class="small fw-semibold" style="color:var(--navy-text);">Monday – Saturday</div>
+          <div class="small mb-2" style="color:var(--text);">8:00 AM – 9:00 PM</div>
+          <div class="small fw-semibold" style="color:var(--navy-text);">Sunday</div>
+          <div class="small" style="color:var(--text);">Emergency &amp; urgent on-call</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4>Accreditation</h4>
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <span class="pill-outline"><i class="bi bi-shield-check" aria-hidden="true"></i>ISO certified</span>
+          <span class="pill-outline"><i class="bi bi-lock" aria-hidden="true"></i>HIPAA compliant</span>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:var(--border);" class="my-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 small" style="color:var(--text);">
+      <span>&copy; <span data-year></span> Mediconnect Clinic. Demo site for illustration only.</span>
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of service</a>
+        <a href="#" id="resetDemoData">Reset demo data</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const redirect = mcSafeRedirect(params.get("redirect"));
+    document.getElementById("loginLink").href = redirect ? `login.html?redirect=${encodeURIComponent(redirect)}` : "login.html";
+    if (redirect) document.getElementById("continueBtn").href = redirect;
+
+    document.getElementById("registerForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const alertBox = document.getElementById("registerAlert");
+      alertBox.classList.add("d-none");
+
+      const name = document.getElementById("fullName").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const address = document.getElementById("address").value.trim();
+      const password = document.getElementById("newPassword").value;
+      const confirm = document.getElementById("confirmPassword").value;
+
+      if (password !== confirm) {
+        alertBox.textContent = "Passwords do not match. Please re-enter.";
+        alertBox.classList.remove("d-none");
+        return;
+      }
+      if (!/^[0-9]{10}$/.test(phone)) {
+        alertBox.textContent = "Please enter a valid 10-digit phone number.";
+        alertBox.classList.remove("d-none");
+        return;
+      }
+
+      const result = await mcRegisterAccount({ name, phone, email, address, password });
+      if (!result.ok) {
+        alertBox.textContent = result.message;
+        alertBox.classList.remove("d-none");
+        return;
+      }
+
+      document.getElementById("registerCard").classList.add("d-none");
+      document.getElementById("successCard").classList.remove("d-none");
+      document.getElementById("assignedMemberId").textContent = result.account.memberId;
+    });
+  });
+</script>
+</body>
+</html>
