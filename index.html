@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mediconnect — Healthcare Consultation &amp; Diagnostic Portal</title>
+<meta name="description" content="Mediconnect is a small clinic offering doctor consultations, diagnostics, pharmacy and health checkups online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Header-->
+<nav class="navbar navbar-expand-lg figma-header sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <i class="bi bi-heart-pulse-fill text-teal fs-4" aria-hidden="true"></i>Mediconnect
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mcNav" aria-controls="mcNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mcNav">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" data-page="doctors.html" href="doctors.html">Doctors</a></li>
+        <li class="nav-item"><a class="nav-link" data-page="patient-care.html" href="patient-care.html">Patient Care</a></li>
+        <li class="nav-item"><a class="nav-link" data-page="specialties.html" href="specialties.html">Specialties</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0" id="navAuthSlot"></div>
+    </div>
+  </div>
+</nav>
+
+<header class="py-5">
+  <div class="container py-4">
+    <div class="mb-5" style="max-width:672px;">
+      <h1 class="fw-bold mb-3" style="font-size:2.25rem; letter-spacing:-0.02em;">Modern healthcare, thoughtfully connected.</h1>
+      <p class="fs-5 mb-4" style="color:var(--text);">Consult expert clinicians, book diagnostics, and manage your health records with clinical precision — with fast routing to a licensed physician.</p>
+      <div class="d-flex flex-wrap gap-3">
+        <a href="doctors.html" class="btn btn-teal px-4 py-2"><i class="bi bi-calendar2-check me-1" aria-hidden="true"></i>Book an appointment</a>
+        <a href="specialties.html" class="btn btn-outline-navy px-4 py-2"><i class="bi bi-grid me-1" aria-hidden="true"></i>View specialties</a>
+      </div>
+    </div>
+
+    <div class="card-figma p-4">
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-tile h-100">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <span class="fw-bold text-navy" style="font-size:1.5rem; letter-spacing:-0.02em;">7</span>
+              <i class="bi bi-patch-check-fill text-teal fs-5" aria-hidden="true"></i>
+            </div>
+            <div class="fw-semibold text-navy mb-1">Board certified doctors</div>
+            <div class="small text-muted-figma">Credentials validated through professional medical registries.</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-tile h-100">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <span class="fw-bold text-navy" style="font-size:1.5rem; letter-spacing:-0.02em;">8</span>
+              <i class="bi bi-grid-fill text-teal fs-5" aria-hidden="true"></i>
+            </div>
+            <div class="fw-semibold text-navy mb-1">Medical specialties</div>
+            <div class="small text-muted-figma">Comprehensive clinical scope, from pediatrics to diabetology.</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-tile h-100">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <span class="fw-bold text-navy" style="font-size:1.5rem; letter-spacing:-0.02em;">12+</span>
+              <i class="bi bi-calendar-heart-fill text-teal fs-5" aria-hidden="true"></i>
+            </div>
+            <div class="fw-semibold text-navy mb-1">Years of care</div>
+            <div class="small text-muted-figma">Continuous ambulatory and clinical health excellence.</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-tile h-100">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <span class="fw-bold text-navy" style="font-size:1.5rem; letter-spacing:-0.02em;">4.8<span class="fs-6 fw-semibold">/5</span></span>
+              <i class="bi bi-star-fill text-teal fs-5" aria-hidden="true"></i>
+            </div>
+            <div class="fw-semibold text-navy mb-1">Patient satisfaction</div>
+            <div class="small text-muted-figma">Based on verified post-consultation reviews.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--About Us-->
+<section class="py-5 bg-bg-alt" id="about">
+  <div class="container py-3">
+    <div class="row gy-5 align-items-center mb-5">
+      <div class="col-lg-6">
+        <span class="pill-teal mb-3"><i class="bi bi-heart-pulse" aria-hidden="true"></i>About us</span>
+        <h2 class="fw-bold mb-3" style="font-size:2rem; letter-spacing:-0.02em;">Dedicated to accessible, evidence-based medicine.</h2>
+        <p class="fs-5" style="color:var(--text);">At Mediconnect, we believe healthcare delivery should be immediate, transparent and deeply compassionate. We pair board-certified clinical judgment with dependable technology to shorten waiting times and deliver clear diagnoses, without geographical barriers.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-figma p-3">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="rounded" style="height:160px; background:var(--icon-bg-2); display:flex; align-items:center; justify-content:center;">
+                <img src="img/home/diagnostic-facility.svg" alt="Diagnostic lab bench with test tubes and an accreditation badge" width="108" height="90" loading="lazy">
+              </div>
+              <div class="small fw-semibold text-navy mt-2">Accredited diagnostic facility</div>
+            </div>
+            <div class="col-6">
+              <div class="rounded" style="height:160px; background:var(--icon-bg-2); display:flex; align-items:center; justify-content:center;">
+                <img src="img/home/care-team.svg" alt="Three care team members with a heart above them" width="108" height="90" loading="lazy">
+              </div>
+              <div class="small fw-semibold text-navy mt-2">Collaborative care team</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2x2 grid -->
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="card-figma p-4 h-100 d-flex flex-row gap-3">
+          <div class="icon-box"><i class="bi bi-award fs-4" aria-hidden="true"></i></div>
+          <div>
+            <h3 class="h6 fw-bold mb-2">Board-certified physicians</h3>
+            <p class="small mb-2" style="color:var(--text);">Every clinician is credentialed and continuously reviewed for clinical excellence.</p>
+            <a href="doctors.html" class="link-teal">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-figma p-4 h-100 d-flex flex-row gap-3">
+          <div class="icon-box"><i class="bi bi-camera-video fs-4" aria-hidden="true"></i></div>
+          <div>
+            <h3 class="h6 fw-bold mb-2">Telemedicine &amp; in-person visits</h3>
+            <p class="small mb-2" style="color:var(--text);">Consult virtually or visit in clinic — the choice is always yours.</p>
+            <a href="doctors.html" class="link-teal">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-figma p-4 h-100 d-flex flex-row gap-3">
+          <div class="icon-box"><i class="bi bi-capsule fs-4" aria-hidden="true"></i></div>
+          <div>
+            <h3 class="h6 fw-bold mb-2">In-house pharmacy</h3>
+            <p class="small mb-2" style="color:var(--text);">Clinician-prescribed medications fulfilled promptly by our licensed in-house dispensary.</p>
+            <a href="patient-care.html" class="link-teal">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-figma p-4 h-100 d-flex flex-row gap-3">
+          <div class="icon-box"><i class="bi bi-receipt fs-4" aria-hidden="true"></i></div>
+          <div>
+            <h3 class="h6 fw-bold mb-2">Transparent billing</h3>
+            <p class="small mb-2" style="color:var(--text);">See itemized costs up front — no hidden fees on any service.</p>
+            <a href="patient-care.html" class="link-teal">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Specialties preview-->
+<section class="py-5">
+  <div class="container py-3">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
+      <div style="max-width:560px;">
+        <span class="pill-outline mb-3"><i class="bi bi-grid" aria-hidden="true"></i>What we treat</span>
+        <h2 class="fw-bold mb-2" style="font-size:2rem; letter-spacing:-0.02em;">Specialties built around you</h2>
+        <p class="mb-0" style="color:var(--text);">From everyday illness to focused rehabilitation, our clinicians cover the specialties patients need most.</p>
+      </div>
+      <a href="specialties.html" class="btn btn-outline-navy">View all specialties</a>
+    </div>
+
+    <div class="row g-3" id="specialtyPreviewGrid"></div>
+    <p class="mt-3 mb-0" style="color:var(--text);">And more — <a href="specialties.html" class="link-teal">see all 8 specialties</a>.</p>
+  </div>
+</section>
+
+<!--CTA banner-->
+<section class="py-5">
+  <div class="container">
+    <div class="cta-banner p-4 p-md-5">
+      <div class="row align-items-center g-4" style="position:relative; z-index:1;">
+        <div class="col-md-8">
+          <span class="pill-teal pill-teal-solid mb-3"><i class="bi bi-person-plus" aria-hidden="true"></i>Get started</span>
+          <h2 class="fw-bold text-white mb-0" style="font-size:1.75rem;">New to Mediconnect?</h2>
+          <p class="text-white-50 mb-0 mt-2">Registration takes under a minute and gives you a Member ID for booking appointments and tracking your care.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <a href="register.html" class="btn btn-teal px-4 py-2">Register now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer-->
+<footer class="figma-footer py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <i class="bi bi-heart-pulse-fill text-teal fs-4" aria-hidden="true"></i>
+          <span class="fw-bold text-navy fs-5">Mediconnect</span>
+        </div>
+        <p class="small mb-3" style="color:var(--text);">Diagnostic-grade clinical portal offering patient triage, specialist appointments, and secure health records.</p>
+        <div class="mb-1"><span class="label-caps">Phone</span><br><span class="small" style="color:var(--navy-text);">+91 20 4567 8899</span></div>
+        <div><span class="label-caps">Email</span><br><span class="small" style="color:var(--navy-text);">care@mediconnect.example</span></div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4>Quick navigation</h4>
+        <ul class="list-unstyled small d-flex flex-column gap-2 mt-3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="patient-care.html">Patient care</a></li>
+          <li><a href="specialties.html">Specialties</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 col-6">
+        <h4>Clinic hours</h4>
+        <div class="mt-3">
+          <div class="small fw-semibold" style="color:var(--navy-text);">Monday – Saturday</div>
+          <div class="small mb-2" style="color:var(--text);">8:00 AM – 9:00 PM</div>
+          <div class="small fw-semibold" style="color:var(--navy-text);">Sunday</div>
+          <div class="small" style="color:var(--text);">Emergency &amp; urgent on-call</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4>Accreditation</h4>
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <span class="pill-outline"><i class="bi bi-shield-check" aria-hidden="true"></i>ISO certified</span>
+          <span class="pill-outline"><i class="bi bi-lock" aria-hidden="true"></i>HIPAA compliant</span>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:var(--border);" class="my-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 small" style="color:var(--text);">
+      <span>&copy; <span data-year></span> Mediconnect Clinic. Demo site for illustration only.</span>
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of service</a>
+        <a href="#" id="resetDemoData">Reset demo data</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const specIcons = {
+    "general-physician":"bi-stethoscope","dermatology":"bi-droplet","dental":"bi-emoji-smile",
+    "pediatric":"bi-emoji-laughing","diabetology":"bi-activity","physiotherapy":"bi-bicycle",
+    "therapy":"bi-chat-heart","allergy":"bi-flower2"
+  };
+  const specImgs = {
+    "general-physician": "img/specialties/general-physician.svg",
+    "dermatology": "img/specialties/dermatology.svg",
+    "dental": "img/specialties/dental.svg",
+    "pediatric": "img/specialties/pediatric.svg",
+    "diabetology": "img/specialties/diabetology.svg",
+    "physiotherapy": "img/specialties/physiotherapy.svg",
+    "therapy": "img/specialties/therapy.svg",
+    "allergy": "img/specialties/allergy.svg"
+  };
+  // The image path comes from the database (specialty.image); specImgs is only a fallback.
+  function specIconHtml(s) {
+    const src = s.image || specImgs[s.id];
+    if (src) return `<img src="${mcEscape(src)}" alt="" width="36" height="36" aria-hidden="true">`;
+    return `<i class="bi ${specIcons[s.id] || 'bi-plus-circle'} fs-5" aria-hidden="true"></i>`;
+  }
+  document.addEventListener("DOMContentLoaded", async function () {
+    const grid = document.getElementById("specialtyPreviewGrid");
+    let specialties;
+    try {
+      specialties = await mcGetSpecialties();
+    } catch (e) {
+      mcShowLoadError(grid, e.message);
+      return;
+    }
+    const preview = specialties.slice(0, 4);
+    grid.innerHTML = preview.map(s => `
+      <div class="col-md-3 col-sm-6">
+        <div class="card-figma p-3 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="icon-box mb-2">${specIconHtml(s)}</div>
+            <h3 class="h6 fw-bold mb-2">${mcEscape(s.name)}</h3>
+            <p class="small mb-0" style="color:var(--text);">${mcEscape(s.description)}</p>
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <a href="doctors.html?specialty=${s.id}" class="link-teal">View doctors <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    `).join("");
+  });
+</script>
+</body>
+</html>
