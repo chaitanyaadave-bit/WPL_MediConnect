@@ -1,0 +1,325 @@
+{
+  "specialties": [
+    {
+      "_id": "general-physician",
+      "name": "General Physician",
+      "icon": "stethoscope",
+      "summary": "Everyday illnesses, checkups and referrals.",
+      "description": "Your first stop for fevers, infections, routine checkups and ongoing health concerns. Our general physicians take time to understand your history and refer you onward only when it's genuinely needed.",
+      "image": "img/specialties/general-physician.svg"
+    },
+    {
+      "_id": "dermatology",
+      "name": "Dermatology",
+      "icon": "droplet",
+      "summary": "Skin, hair and nail conditions.",
+      "description": "Diagnosis and treatment for acne, eczema, psoriasis, hair loss and other skin, hair and nail conditions, along with cosmetic dermatology consultations.",
+      "image": "img/specialties/dermatology.svg"
+    },
+    {
+      "_id": "dental",
+      "name": "Dental Care",
+      "icon": "tooth",
+      "summary": "Cleanings, fillings and oral surgery.",
+      "description": "Routine cleanings, cavity fillings, root canals, extractions and cosmetic dentistry, delivered with modern pain-management techniques.",
+      "image": "img/specialties/dental.svg"
+    },
+    {
+      "_id": "pediatric",
+      "name": "Pediatric Care",
+      "icon": "child",
+      "summary": "Care for infants through teens.",
+      "description": "Growth tracking, vaccinations and treatment for common childhood illnesses, in a clinic built to put younger patients at ease.",
+      "image": "img/specialties/pediatric.svg"
+    },
+    {
+      "_id": "diabetology",
+      "name": "Diabetology",
+      "icon": "activity",
+      "summary": "Diabetes diagnosis and management.",
+      "description": "Blood sugar management plans, HbA1c monitoring and lifestyle guidance for patients living with type 1 or type 2 diabetes.",
+      "image": "img/specialties/diabetology.svg"
+    },
+    {
+      "_id": "physiotherapy",
+      "name": "Physiotherapy & Rehabilitation",
+      "icon": "person-walking",
+      "summary": "Movement recovery after injury or surgery.",
+      "description": "Hands-on rehabilitation for sports injuries, post-surgical recovery, chronic pain and mobility loss, with individually tailored exercise plans.",
+      "image": "img/specialties/physiotherapy.svg"
+    },
+    {
+      "_id": "therapy",
+      "name": "Psychology / Therapy",
+      "icon": "chat-heart",
+      "summary": "Confidential mental health support.",
+      "description": "One-on-one counselling for anxiety, stress, relationship difficulties and other mental health concerns, in a private and judgement-free setting.",
+      "image": "img/specialties/therapy.svg"
+    },
+    {
+      "_id": "allergy",
+      "name": "General Allergy Clinic",
+      "icon": "flower2",
+      "summary": "Testing and treatment for allergies.",
+      "description": "Allergy testing and long-term management plans for seasonal, food and skin allergies, including immunotherapy options.",
+      "image": "img/specialties/allergy.svg"
+    }
+  ],
+  "doctors": [
+    {
+      "_id": "D001",
+      "name": "Dr. Anjali Mehta",
+      "specialtyId": "general-physician",
+      "experience": 12,
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "qualification": "MBBS, MD (Internal Medicine)",
+      "about": "Dr. Mehta has spent over a decade treating everyday illness and chronic conditions, with a focus on preventive care and clear communication with patients.",
+      "photo": "img/doctors/D001.png"
+    },
+    {
+      "_id": "D002",
+      "name": "Dr. Rohan Kapoor",
+      "specialtyId": "dermatology",
+      "experience": 9,
+      "days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "qualification": "MBBS, MD (Dermatology)",
+      "about": "Dr. Kapoor treats acne, eczema and hair loss, and also consults on cosmetic dermatology procedures.",
+      "photo": "img/doctors/D002.png"
+    },
+    {
+      "_id": "D003",
+      "name": "Dr. Sneha Iyer",
+      "specialtyId": "dental",
+      "experience": 7,
+      "days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "qualification": "BDS, MDS (Oral Surgery)",
+      "about": "Dr. Iyer specialises in painless dental procedures, from routine cleanings to root canals and extractions.",
+      "photo": "img/doctors/D003.png"
+    },
+    {
+      "_id": "D004",
+      "name": "Dr. Arvind Rao",
+      "specialtyId": "pediatric",
+      "experience": 15,
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "qualification": "MBBS, MD (Pediatrics)",
+      "about": "Dr. Rao has cared for children for 15 years, with particular focus on early growth tracking and vaccination schedules.",
+      "photo": "img/doctors/D004.png"
+    },
+    {
+      "_id": "D005",
+      "name": "Dr. Priya Nair",
+      "specialtyId": "diabetology",
+      "experience": 10,
+      "days": [
+        "Mon",
+        "Tue",
+        "Thu"
+      ],
+      "qualification": "MBBS, DM (Endocrinology)",
+      "about": "Dr. Nair helps patients manage type 1 and type 2 diabetes with personalised diet, medication and monitoring plans.",
+      "photo": "img/doctors/D005.png"
+    },
+    {
+      "_id": "D006",
+      "name": "Dr. Karan Malhotra",
+      "specialtyId": "physiotherapy",
+      "experience": 6,
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "qualification": "BPT, MPT (Sports Rehabilitation)",
+      "about": "Dr. Malhotra works with athletes and post-surgical patients on structured recovery and mobility programmes.",
+      "photo": "img/doctors/D006.png"
+    },
+    {
+      "_id": "D007",
+      "name": "Dr. Fatima Shaikh",
+      "specialtyId": "therapy",
+      "experience": 8,
+      "days": [
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "qualification": "M.Phil (Clinical Psychology)",
+      "about": "Dr. Shaikh provides confidential one-on-one counselling for anxiety, stress and relationship concerns.",
+      "photo": "img/doctors/D007.png"
+    }
+  ],
+  "medicines": [
+    {
+      "_id": "M1",
+      "name": "Paracetamol 500mg",
+      "category": "Pain Relief",
+      "price": 30,
+      "rx": false,
+      "image": "img/medicines/M1.svg"
+    },
+    {
+      "_id": "M2",
+      "name": "Amoxicillin 250mg",
+      "category": "Antibiotic",
+      "price": 85,
+      "rx": true,
+      "image": "img/medicines/M2.svg"
+    },
+    {
+      "_id": "M3",
+      "name": "Metformin 500mg",
+      "category": "Diabetes",
+      "price": 60,
+      "rx": true,
+      "image": "img/medicines/M3.svg"
+    },
+    {
+      "_id": "M4",
+      "name": "Cetirizine 10mg",
+      "category": "Allergy",
+      "price": 25,
+      "rx": false,
+      "image": "img/medicines/M4.svg"
+    },
+    {
+      "_id": "M5",
+      "name": "Atorvastatin 10mg",
+      "category": "Cholesterol",
+      "price": 95,
+      "rx": true,
+      "image": "img/medicines/M5.svg"
+    }
+  ],
+  "packages": [
+    {
+      "_id": "PKG1",
+      "name": "Basic Health Checkup",
+      "includes": "CBC, Blood Sugar, Blood Pressure check",
+      "price": 999,
+      "image": "img/checkups/PKG1.svg"
+    },
+    {
+      "_id": "PKG2",
+      "name": "Diabetes Screening",
+      "includes": "Fasting & PP Sugar, HbA1c",
+      "price": 1499,
+      "image": "img/checkups/PKG2.svg"
+    },
+    {
+      "_id": "PKG3",
+      "name": "Full Body Checkup",
+      "includes": "CBC, Lipid Profile, LFT, KFT, Thyroid, ECG",
+      "price": 2999,
+      "image": "img/checkups/PKG3.svg"
+    },
+    {
+      "_id": "PKG4",
+      "name": "Senior Citizen Package",
+      "includes": "Full Body Checkup + Bone Density + Vision/Hearing",
+      "price": 3999,
+      "image": "img/checkups/PKG4.svg"
+    }
+  ],
+  "accounts": [
+    {
+      "memberId": "MC10234",
+      "name": "Riya Sharma",
+      "phone": "9876543210",
+      "email": "riya.sharma@example.com",
+      "address": "14 Lakeview Road, Pune",
+      "password": "Riya@123"
+    },
+    {
+      "memberId": "MC10567",
+      "name": "Akash Verma",
+      "phone": "9123456780",
+      "email": "akash.verma@example.com",
+      "address": "22 Church Street, Pune",
+      "password": "Akash@456"
+    }
+  ],
+  "reports": [
+    {
+      "memberId": "MC10234",
+      "reportId": "RPT7788",
+      "type": "Blood Test — CBC",
+      "date": "2026-08-12",
+      "doctor": "Dr. Anjali Mehta",
+      "summary": "All values within normal range. No action needed.",
+      "status": "Final"
+    },
+    {
+      "memberId": "MC10234",
+      "reportId": "RPT7802",
+      "type": "Lipid Profile",
+      "date": "2026-09-02",
+      "doctor": "Dr. Anjali Mehta",
+      "summary": "LDL cholesterol slightly elevated. Dietary changes recommended, follow-up in 3 months.",
+      "status": "Final"
+    },
+    {
+      "memberId": "MC10567",
+      "reportId": "RPT7910",
+      "type": "X-Ray — Chest",
+      "date": "2026-08-20",
+      "doctor": "Dr. Priya Nair",
+      "summary": "No abnormalities detected.",
+      "status": "Final"
+    }
+  ],
+  "bills": [
+    {
+      "memberId": "MC10234",
+      "billId": "BL5501",
+      "description": "Consultation — Dr. Mehta",
+      "amount": 500,
+      "status": "Paid",
+      "date": "2026-08-12"
+    },
+    {
+      "memberId": "MC10234",
+      "billId": "BL5522",
+      "description": "Blood Test — CBC",
+      "amount": 800,
+      "status": "Unpaid",
+      "date": "2026-08-12"
+    },
+    {
+      "memberId": "MC10567",
+      "billId": "BL5601",
+      "description": "X-Ray — Chest",
+      "amount": 1200,
+      "status": "Unpaid",
+      "date": "2026-08-20"
+    }
+  ]
+}
